@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>8 Vezir Bulmacası</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			display: grid;
+			min-height: 100vh;
+			margin: 0;
+			place-items: center;
+			background: #f3f0e8;
+			font-family: sans-serif;
+		}
+
+		.chessboard {
+			width: min(90vw, 640px);
+			aspect-ratio: 1;
+			border-collapse: collapse;
+			border: 4px solid #2f2a24;
+		}
+
+		td {
+			width: 12.5%;
+			aspect-ratio: 1;
+			background: #8b5e3c;
+		}
+        tr {
+            height: 12.5%;
+        }
+		tr:nth-child(odd) td:nth-child(odd),
+		tr:nth-child(even) td:nth-child(even) {
+			background: #ead7b7;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<table class="chessboard" aria-label="8x8 satranç tahtası">
+			<tbody>
+				<tr>
+					<td data-row="1" data-column="1"></td><td data-row="1" data-column="2"></td>
+					<td data-row="1" data-column="3"></td><td data-row="1" data-column="4"></td>
+					<td data-row="1" data-column="5"></td><td data-row="1" data-column="6"></td>
+					<td data-row="1" data-column="7"></td><td data-row="1" data-column="8"></td>
+				</tr>
+				<tr>
+					<td data-row="2" data-column="1"></td><td data-row="2" data-column="2"></td>
+					<td data-row="2" data-column="3"></td><td data-row="2" data-column="4"></td>
+					<td data-row="2" data-column="5"></td><td data-row="2" data-column="6"></td>
+					<td data-row="2" data-column="7"></td><td data-row="2" data-column="8"></td>
+				</tr>
+				<tr>
+					<td data-row="3" data-column="1"></td><td data-row="3" data-column="2"></td>
+					<td data-row="3" data-column="3"></td><td data-row="3" data-column="4"></td>
+					<td data-row="3" data-column="5"></td><td data-row="3" data-column="6"></td>
+					<td data-row="3" data-column="7"></td><td data-row="3" data-column="8"></td>
+				</tr>
+				<tr>
+					<td data-row="4" data-column="1"></td><td data-row="4" data-column="2"></td>
+					<td data-row="4" data-column="3"></td><td data-row="4" data-column="4"></td>
+					<td data-row="4" data-column="5"></td><td data-row="4" data-column="6"></td>
+					<td data-row="4" data-column="7"></td><td data-row="4" data-column="8"></td>
+				</tr>
+				<tr>
+					<td data-row="5" data-column="1"></td><td data-row="5" data-column="2"></td>
+					<td data-row="5" data-column="3"></td><td data-row="5" data-column="4"></td>
+					<td data-row="5" data-column="5"></td><td data-row="5" data-column="6"></td>
+					<td data-row="5" data-column="7"></td><td data-row="5" data-column="8"></td>
+				</tr>
+				<tr>
+					<td data-row="6" data-column="1"></td><td data-row="6" data-column="2"></td>
+					<td data-row="6" data-column="3"></td><td data-row="6" data-column="4"></td>
+					<td data-row="6" data-column="5"></td><td data-row="6" data-column="6"></td>
+					<td data-row="6" data-column="7"></td><td data-row="6" data-column="8"></td>
+				</tr>
+				<tr>
+					<td data-row="7" data-column="1"></td><td data-row="7" data-column="2"></td>
+					<td data-row="7" data-column="3"></td><td data-row="7" data-column="4"></td>
+					<td data-row="7" data-column="5"></td><td data-row="7" data-column="6"></td>
+					<td data-row="7" data-column="7"></td><td data-row="7" data-column="8"></td>
+				</tr>
+				<tr>
+					<td data-row="8" data-column="1"></td><td data-row="8" data-column="2"></td>
+					<td data-row="8" data-column="3"></td><td data-row="8" data-column="4"></td>
+					<td data-row="8" data-column="5"></td><td data-row="8" data-column="6"></td>
+					<td data-row="8" data-column="7"></td><td data-row="8" data-column="8"></td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+</body>
+</html>
